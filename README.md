@@ -3,8 +3,8 @@
 
 ## How to Run:
 
-* [Download] or [Clone] the Repository.(https://github.com/Cetoute/memory-game)
-* Open [index.html] file to view the project in your browser (https://cetoute.github.io/memory-game/).
+* [Download] or [Clone] the Repository.(https://github.com/Cetoute/Arcade-Game1)
+* Open [index.html] file to view the project in your browser ( https://cetoute.github.io/Arcade-Game1/).
 
 
 
