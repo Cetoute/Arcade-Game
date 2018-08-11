@@ -9,5 +9,5 @@
 
 
 ## How to Play: The Rules
-To play the game you simply move the character around using the up, down, left and right keys on your keyboard. The player cannot go out-of-bounds. The object of the game is to get the player across the brick rows and into the water without being touched by the bugs. 
+* To play the game you simply move the character around using the up, down, left and right keys on your keyboard. The player cannot go out-of-bounds. The object of the game is to get the player across the brick rows and into the water without being touched by the bugs. 
  
