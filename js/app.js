@@ -1,5 +1,6 @@
 // Enemies our player must avoid
 var Enemy = function(x, y) {
+	 "use strict";
 	this.sprite = 'images/enemy-bug.png';
 	this.x = x;
 	this.y = y;
@@ -8,6 +9,7 @@ var Enemy = function(x, y) {
 
  
 Enemy.prototype.update = function(dt) {
+	 "use strict";
 	this.x += this.speed * dt;
 // when off canvas, reset position of enemy to move across again
 	if(this.x > 6 * 101) {
@@ -24,6 +26,7 @@ Enemy.prototype.update = function(dt) {
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
+	 "use strict";
 	ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
@@ -32,12 +35,14 @@ Enemy.prototype.render = function() {
 // a handleInput() method.
 
 var Player = function() {
+	 "use strict";
 	this.sprite = 'images/char-horn-girl.png';
 	this.reset();
 };
 
 // Update the player's position, required method for game
 Player.prototype.update = function() {
+	 "use strict";
 	if(this.col < 0) {
 	this.col = 0;
 	}
@@ -62,11 +67,13 @@ Player.prototype.update = function() {
 
 // Draw the player on the screen, required method for game
 Player.prototype.render = function() {
+	 "use strict";
 	ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
 // Handle user input for controlling the player
 Player.prototype.handleInput = function(key) {
+	 "use strict";
 	switch(key) {
 	case 'left':
 	this.col--;
@@ -84,6 +91,7 @@ Player.prototype.handleInput = function(key) {
 };
 
 Player.prototype.reset = function() {
+	 "use strict";
 	this.col = 2;
 	this.row = 5;
 	this.x = this.col * 101;
@@ -116,6 +124,7 @@ var score = new Score();
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
+	 "use strict";
 	var allowedKeys = {
 	37: 'left',
 	38: 'up',
